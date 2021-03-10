@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercise 2.9</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container" style="width: 50%">
+        <form action="ex2_9.php" method="POST" role="form">
+            <legend>Registration Form </legend>
+
+            <div class="form-group">
+                <label for="">Name</label>
+                <input type="text" class="form-control" id="" placeholder="Enter name" name="name">
+            </div>
+
+            <div class="form-group">
+                <label for="">Date of birth</label>
+                <input type="date" name="dob" id="input" class="form-control" value="" title="">
+            </div>
+
+            <div class="form-group">
+                <label for="">Student ID</label>
+                <input type="text" class="form-control" name="sid" id="" placeholder="">
+            </div>
+
+            <div class="form-group">
+                <label for="">Gender</label>
+                <input type="radio" value="male" name="gender"> Male
+                <input type="radio" value="female" name="gender"> Female
+            </div>
+
+            <div class="form-group">
+                <label for="">Phone</label>
+                <input type="text" class="form-control" id="" placeholder="" name="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="">University</label>
+                <input type="text" class="form-control" name="uni" id="" placeholder="">
+            </div>
+
+            <div class="form-group">
+                <label for="">Class</label>
+                <input type="text" class="form-control" name="class" id="" placeholder="">
+            </div>
+
+            <div class="form-group">
+                <label for="">Level</label>
+                <select name="level" size="1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option selected>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="">Hobby</label>
+                <input type="checkbox" value="Movie" name="hobby[]"> Watching movies
+
+                <input type="checkbox" value="Singing" name="hobby[]"> Singing
+
+                <input type="checkbox" value="Sport" name="hobby[]"> Sport
+
+                <input type="checkbox" value="Fashion" name="hobby[]"> Fashion
+
+                <input type="checkbox" value="Camping" name="hobby[]"> Camping
+
+                <input type="checkbox" value="Shopping" name="hobby[]"> Shopping
+
+                <input type="checkbox" value="Gaming" name="hobby[]"> Gaming
+
+            </div>
+
+            <div class="form-group">
+                <label for="">Your social media link:</label>
+                <input type="url" class="form-control" name="social" id="" placeholder="">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-danger">Reset</button>
+        </form>
+    </div>
+
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

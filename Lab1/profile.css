@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+    background-color: #449399;
+}
+table {
+ width: 60%;
+ font-size: 1rem;
+ font-family: "Open Sans", sans-serif;
+ border-radius: 10px;
+ border: 1px solid #313c4e;
+ box-shadow: 0 2px 5px 0 #313c4e, 0 2px 10px 0 #313c4e;
+ background-color: white;
+}
+table th {
+    width: 100px
+}
+
+tr td:first-child{
+    border-right: 0;
+    border-bottom: 0;
+    border-top: 0;
+}
+
+tr td:last-child{
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+table tr:first-child td {
+    border-bottom: 1px solid #313c4e;
+}
+table tr td:first-child {
+    padding: 0 1.17rem 1.17rem 1.17rem;
+}
+
+table tr td:last-child {
+    padding: 0 1.17rem 1.17rem 0;
+}
+
+table tr:first-child td {
+    padding:1.17rem;
+}
+tr td {
+    vertical-align: baseline;
+}
+tr.head td {
+    vertical-align: middle;
+}
+h2{
+    margin-top: 0;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+ul{
+    list-style-type: none;
+}
+.list {
+    padding: 0;
+}
+.header {
+    text-align: left;
+}
+.header p {
+    margin: 0px;
+}
+/* 
+    Author: Nguyen Manh Phuc
+    Created: 3/3/2021
+ */
+ul.list {
+    width: 80%;
+    float: left;
+}
+ul.list li {
+    padding: 5px 0;
+}
+ul.list li i {
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+    color: #313c4e!important;
+}
+
+ul.list li span:first-child {
+    margin-right: 15px;
+}
+
+ul.list li span:last-child {
+   float: right;
+}
+
+a.mylink {
+    color:#449399;
+    text-decoration: none;
+}
+
+a.mylink:hover{
+    color: #34d2dd;
+    text-decoration: none;
+}
+.img {
+    width: 57%;
+}
+ul.skills{
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+ul.skills li {
+    display: inline-block;
+}
+ul.skills li a {
+    display: inline-block;
+    border: 1px solid #eeeeee;
+    border-radius:6px;
+    background: #313c4e;
+    padding: 4px 20px;
+    margin-bottom: 8px;
+    margin-right: 3px;
+    transition: all 0.3s ease 0s;
+    color: white;
+    font-size: 13px;
+}
+
+ul.skills li a:hover{
+    background: #7997c9;
+    color: white;
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+td i {
+    color: #449399;
+    font-size: small;
+}
+div.project h4 {
+    margin-bottom: 0px;
+}
+
+div.project ul {
+    margin-top: 0;
+    font-size: small;
+}
+
+div.project ul li::before {
+    content: "\2022";
+    color: #449399;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+ul.ori {
+    padding: 0;
+}
+ul.ori li {
+    margin-bottom: 10px;
+    
+}
+.small {
+    width: 20%
+}
+.mb-35 {
+    margin-bottom: 40px;
+}
+.p-17 {
+    padding-top: 1.7rem !important;
+}
+.p-10 {
+    padding-left: 20px;
+}
+
+.last-row h3 {
+    margin-bottom: 0
+}
+
+.last-row h4 {
+    margin-top: 10px;
+}
+
+tr td.last-row:last-child ul.lang{
+    padding: 0;
+    margin-top: 0;
+}
+
+tr td.last-row:last-child h4 {
+    margin-bottom: 0;
+}
+tr td.last-row:last-child ul.lang li{
+    display: inline-block;
+    width: 45%;
+}
+
+ul.interest {
+    margin-top: 15px;
+}
+ul.interest li a{
+    padding: 4px 8px;
+    background-color: white;
+    border-color: #313c4e;
+    color: #313c4e;
+}
+
+ul.interest li a:hover{
+    background-color: #313c4e;
+    border-color: #313c4e;
+    color: white;
+}
