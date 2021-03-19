@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>A simple form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/conditional.css">
+</head>
+
+<body>
+    <main>
+        <div class="main-block">
+            <div class="information">
+                <header class="header" id="info-header">
+                    <h2>GRADE INFORMATION</h2>
+                </header><!-- /header -->
+
+                <div class="main-info" style="font-size:x-large;">
+                    <p class="para1">Fill in your personal information in the form on the right</p>
+                    <p>
+                        <b>Guide: </b>Provide us your first name, last name, middle name, and your scores for the
+                        midterm and final exam. Then click submit to view your course grade
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="register">
+                <header class="header" id="register-header">
+                    <h2>INFORMATION FORM</h2>
+                </header><!-- /header -->
+
+                <form action="ConditionalTest.php" method="get">
+                    <div class="input">
+                        <div class="input-half">
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="firstName" id="firstName" required>
+                        </div>
+
+                        <div class="input-half">
+                            <label for="middleName">Middle Name</label>
+                            <input type="text" name="middleName" id="middleName" required>
+                        </div>
+                    </div>
+
+                    <div class="input">
+                        <div class="input-full">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="lastName" id="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="input">
+                        <div class="input-half">
+                            <label for="grade1">Midterm Grade</label>
+                            <input type="number" name="grade1" id="grade1" required>
+                        </div>
+
+                        <div class="input-half">
+                            <label for="grade2">Final Grade</label>
+                            <input type="number" name="grade2" id="grade2" required>
+                        </div>
+                    </div>
+
+
+
+                    <div class="input-btn">
+                        <input type="submit" name="submit" value="Submit" class="sub-btn">
+                        <input type="reset" value="Reset" class="reset-btn">
+                    </div>
+
+
+
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

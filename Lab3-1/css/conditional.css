@@ -1,0 +1,193 @@
+*{
+	margin: 0;
+	padding: 0
+}
+@font-face{
+    src: url('../fonts/OpenSans-Regular.ttf');
+    font-family: 'OpenSans-Regular';
+}
+
+@font-face{
+    src: url('../fonts/OpenSans-Light.ttf');
+    font-family: 'OpenSans-Light';
+}
+
+@font-face{
+    src: url('../fonts/OpenSans-Bold.ttf');
+    font-family: 'OpenSans-Bold';
+}
+html{
+	font-family: 'OpenSans-Regular';
+	height: 100%;
+	width: 100%
+}
+body{
+	background: #75e2e9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%
+}
+main{
+	width: 60%;
+	height:auto
+}
+.main-block{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+	padding-bottom: 40px;
+	display: inline-block;
+	background: linear-gradient(to right, #3786be 50%, white 50%);
+
+} 
+/* Information */
+.information, .register{
+	width: 50%;
+	height: 100%;
+	float: left;
+	box-sizing: border-box;
+	display: inherit
+}
+
+.information{
+	padding: 50px 40px 
+}
+.information .header h2{
+	font-size: 2rem;
+	color: white;
+	font-family: 'OpenSans-Bold'
+}
+.information .main-info{
+	color: white;
+	margin-bottom: 30px
+}
+
+.information .main-info p{
+	font-family: 'OpenSans-Light';
+}
+
+.para1{
+	padding-bottom: 20px;
+}
+
+
+
+/* Register */
+
+.register{
+	padding: 40px 30px 0px 30px;
+}
+
+.register .header h2{
+	font-size: 2rem;
+	color:  #3786be;
+	font-family : 'OpenSans-Bold'
+}
+
+.header{
+	padding-bottom: 25px;
+}
+
+.input form{
+	width: 100%
+}
+.input{
+	width: 100%;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+	float: left 
+}
+
+.input input{
+	width: 100%;
+	box-sizing: border-box;
+	outline: none;
+	border-radius: 5px 0px;
+	border: 1px solid lightgray;
+	height: 45px;
+	font:  inherit;
+	padding:  8px;
+}
+
+.input .input-half{
+	width: 50%;
+	padding-right: 15px;
+	box-sizing: border-box;
+	float: left
+}
+
+
+
+.input .input-full{
+	width: 100%;
+	box-sizing: border-box;
+	padding-right: 15px;
+
+}
+.input .input-full label{
+	width: 100%;
+}
+
+
+.register .input label{
+	font-weight: bold;
+	color: gray;
+	padding-bottom: 5px;
+	display: inline-block
+}
+
+.agree{
+	width: 100%;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	float: left;
+	margin-bottom: 25px;
+}
+
+#agree{
+	margin-right: 5px;
+	background: white
+}
+
+.agree a{
+	color: #3786be
+}
+
+.sub-btn{
+	background: #3786be;
+	color: white;
+	border-radius: 5px 0px;
+	padding: 13px 25px;
+	border: none;
+	font-size: 15px;
+	font-family: 'OpenSans-Bold';
+	margin-right: 10px;
+}
+
+.sub-btn:hover{
+	background: #3762be;
+	cursor: pointer
+}
+
+
+.reset-btn{
+	color: white;
+	background: gray;
+	border-radius: 5px 0px;
+	padding: 13px 25px;
+	border:none;
+	font-size: 15px;
+	font-family: 'OpenSans-Bold'
+}
+
+.reset-btn:hover{
+	cursor: pointer;
+	color: #3786be;
+	background: lightgray;
+}
+
