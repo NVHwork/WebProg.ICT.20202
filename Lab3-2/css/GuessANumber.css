@@ -37,14 +37,6 @@ html {
 	display: inline-block;
 	text-align: left;
 	vertical-align: middle;
-	width: 70%;
 	margin-top: 0;
 }
 
-body {
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	height:100%;
-	width:100%
-}
