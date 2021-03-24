@@ -32,14 +32,22 @@
 				<th>Walking time</th>
 			</thead>
 			<?php
-				for ($i = 0; $i < sizeof($destination); $i++) {
-					// print $destination[$i]. "<br>";
-					$d = $destination[$i];
-					print "<tr><td>" . $i+1 . "</td>";
-					print "<td>$d</td>";
-					print "<td>$cities[$d]</td>";
-					print "<td>". calcDriveTime($cities, $d) ."</td>";
-					print "<td>". calcWalkTime($cities, $d) ."</td></tr>";
+				if (isset($destination)) {
+					for ($i = 0; $i < sizeof($destination); $i++) {
+						// print $destination[$i]. "<br>";
+						$d = $destination[$i];
+						print "<tr><td>" . $i+1 . "</td>";
+						if (isset($cities[$d])) {
+							print "<td>$d</td>";
+							print "<td>$cities[$d]</td>";
+							print "<td>" . calcDriveTime($cities, $d) . "</td>";
+							print "<td>" . calcWalkTime($cities, $d) . "</td></tr>";
+						} else {
+							print "<td colspan=4>Sorry. No information for $d!</td></tr>";
+						}					
+					}
+				} else {
+					print "<tr><td colspan=5>You haven't select anything!</td></tr>";
 				}
 			?>
 		</table>

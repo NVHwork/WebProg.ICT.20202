@@ -18,6 +18,7 @@
 				<option>San Francisco</option>
 				<option>Toronto</option>
 				<option>Washington, DC</option>
+				<option>New York</option>
 			</select>
 			<br>
 			<input type="submit" value="Submit">
