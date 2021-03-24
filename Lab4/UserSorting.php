@@ -82,45 +82,50 @@ if (isset($_POST["submitted"], $_POST["sort_type"])) {
 
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     <div class="form-group">
-                        <input type="radio" name="sort_type" value="sort" />Standard sort
+                        <input type="radio" name="sort_type" value="sort" <?= (isset($_POST['sort_type']) && $sort_type == 'sort') ? "checked='checked'" : '' ?> /> Standard sort
                     </div>
 
                     <div class="form-group">
-                        <input type="radio" name="sort_type" value="rsort" /> Reverse sort
+                        <input type="radio" name="sort_type" value="rsort" <?= (isset($_POST['sort_type']) && $sort_type == 'rsort') ? "checked='checked'" : '' ?> /> Reverse sort
                     </div>
 
                     <div class="form-group">
-                        <input type="radio" name="sort_type" value="rsort" /> Reverse sort
+                        <input type="radio" name="sort_type" value="usort" <?= (isset($_POST['sort_type']) && $sort_type == 'usort') ? "checked='checked'" : '' ?> /> User-defined sort
+
+                    </div>
+
+                </div>
+
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="form-group">
+                        <input type="radio" name="sort_type" value="ksort" <?= (isset($_POST['sort_type']) && $sort_type == 'ksort') ? "checked='checked'" : '' ?> /> Key sort
+
                     </div>
                     <div class="form-group">
-                        <input type="radio" name="sort_type" value="usort" /> User-defined sort
+                        <input type="radio" name="sort_type" value="krsort" <?= (isset($_POST['sort_type']) && $sort_type == 'krsort') ? "checked='checked'" : '' ?> /> Reverse key sort
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" name="sort_type" value="uksort" <?= (isset($_POST['sort_type']) && $sort_type == 'uksort') ? "checked='checked'" : '' ?> /> User-defined key sort
                     </div>
                 </div>
 
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     <div class="form-group">
-                        <input type="radio" name="sort_type" value="ksort" /> Key sort
+                        <input type="radio" name="sort_type" value="asort" <?= (isset($_POST['sort_type']) && $sort_type == 'asort') ? "checked='checked'" : '' ?> /> Value sort
 
                     </div>
-                    <div class="form-group">
-                        <input type="radio" name="sort_type" value="krsort" /> Reverse key sort
-                    </div>
-                    <div class="form-group">
-                        <input type="radio" name="sort_type" value="uksort" /> User-defined key sort
-                    </div>
-                </div>
 
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     <div class="form-group">
-                        <input type="radio" name="sort_type" value="asort" /> Value sort
+                        <input type="radio" name="sort_type" value="arsort" <?= (isset($_POST['sort_type']) && $sort_type == 'arsort') ? "checked='checked'" : '' ?> /> Reverse value sort
 
                     </div>
-                    <input type="radio" name="sort_type" value="arsort" /> Reverse value sort
+
+
                     <div class="form-group">
+                        <input type="radio" name="sort_type" value="uasort" <?= (isset($_POST['sort_type']) && $sort_type == 'uasort') ? "checked='checked'" : '' ?> /> User-defined value sort
+
                     </div>
-                    <input type="radio" name="sort_type" value="uasort" /> User-defined value sort
-                    <div class="from-group">
-                    </div>
+
                 </div>
             </div>
 
