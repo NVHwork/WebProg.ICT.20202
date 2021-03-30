@@ -4,11 +4,35 @@
     <title>Square & Cube</title>
 </head>
 
+<style>
+	body {
+		width: 50%;
+		margin: auto;
+		text-align: center;
+	}
+
+	h1 {
+		color: red;
+	}
+
+	#select {
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 20px;
+	}
+
+	#result {
+		width: 100%;
+		text-align: center;
+		border-collapse: collapse;
+	}
+</style>
+
 <body>
-    <font size=5 color="Red"> Generate Square and cube value</font>
+    <h1> Generate Square and cube value</h1>
     <br>
     <form action="<?php echo $_SERVER['PHP_SELF']?>" method="GET">
-    <?php 
+   		<?php 
             if (array_key_exists("start", $_GET)) {
                 $start = $_GET["start"];
                 $end = $_GET["end"];
@@ -18,9 +42,9 @@
             }
         ?>
 
-    <table  style="width:100%">
+    <table id="select">
         <tr>
-            <td>Select start number:</td>
+            <td>Select start number: </td>
             <td><select name="start">
                 <?php 
                     for ($i = 0; $i <= 10; $i++) {
@@ -35,7 +59,7 @@
             </select></td>
         </tr>
         <tr>
-            <td>Select end number:</td>
+            <td>Select end number: </td>
             <td><select name="end">
                 <?php 
                     for ($i = 0; $i <= 20; $i++) {
@@ -55,7 +79,8 @@
         </tr>
     </table>
 
-    <table  style="width:100%">
+	<br>
+    <table id="result" border>
         <tr>
             <th>Number</th>
             <th>Square</th>
