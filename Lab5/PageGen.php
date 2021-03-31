@@ -35,6 +35,10 @@ if (isset($_POST["site_name"], $_POST["title"], $_POST["content"], $_POST["year"
     .navigation {
         background: <?= $theme_color ?>
     }
+
+    footer {
+        color: white !important;
+    }
 </style>
 
 <body style="color: <?= $text_color ?>">
