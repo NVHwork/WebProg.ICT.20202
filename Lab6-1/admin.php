@@ -22,6 +22,11 @@
         } elseif (trim($_POST['title']) == "") {
             print "Missing title";
         } else {
+            // trim input
+            $_POST['id'] = trim($_POST['id']);
+            $_POST['title'] = trim($_POST['title']);
+            $_POST['description'] = trim($_POST['description']);
+
             $addQuery = "INSERT INTO $table_name (category_id, title, description) VALUES('" . $_POST['id'] . "','" . $_POST['title'] . "','" . $_POST['description'] . "')";
             $valueAdd = mysqli_query($connect, $addQuery);
             if (!$valueAdd) {
