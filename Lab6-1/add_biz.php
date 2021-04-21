@@ -33,6 +33,8 @@
             $_POST['telephone'] = trim($_POST['telephone']);
             $_POST['url'] = trim($_POST['url']);
 
+            // check if telephone 
+
             // add new business
             $sql = "INSERT INTO $business_table_name (name, address, city, telephone, url) VALUES('" . $_POST['name'] . "','" . $_POST['address'] . "','" . $_POST['city'] . "','" . $_POST['telephone'] . "','" . $_POST['url'] . "')";
             $insert_bus_sql = mysqli_query($connect, $sql);
