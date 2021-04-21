@@ -2,6 +2,15 @@
 
 <head>
     <title>Category Administration</title>
+	<style>
+		th {
+			background-color: #f86335;
+			height: 30px;
+		}
+		tr {height: 30px;}
+		#title {width: 300px;}
+		#desc {width: 300px;}
+	</style>
 </head>
 
 <body>
@@ -47,13 +56,13 @@
         <?php
         while ($rs = mysqli_fetch_array($value)) {
             print "<tr>";
-            print "<td>";
+            print '<td>';
             print $rs['category_id'];
             print "</td>";
-            print "<td>";
+            print '<td>';
             print $rs['title'];
             print "</td>";
-            print "<td>";
+            print '<td>';
             print $rs['description'];
             print "</td>";
             print "</tr>";
@@ -61,9 +70,9 @@
         ?>
         <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST">
             <tr>
-                <td><input type="text" name="id"></td>
-                <td><input type="text" name="title"></td>
-                <td><input type="text" name="description"></td>
+                <td><input id="catid"  type="text" name="id"></td>
+                <td><input id="title" type="text" name="title"></td>
+                <td><input id="desc" type="text" name="description"></td>
             </tr>
             <tr>
                 <td><input type="submit" value="Add Category">
