@@ -1,0 +1,46 @@
+h1 {
+	text-align: center;
+}
+
+p {
+	border: 0.25in solid black;
+	padding: 0.5in;
+	margin: 50px auto;
+	background: url(paper.jpg);
+	width: 50%;
+	text-align: center;
+}
+
+body {
+	background: url(brick.jpg);
+	background-size: 20%;
+}
+
+.banner {
+	background: url(wood.jpg);
+	font-size: 50pt;
+	font-family: Arial Rounded MT Bold;
+}
+
+div.tb table{
+	margin: 0 auto;
+	text-align: center;
+	color: rgb(0, 0, 0);
+}
+
+ul.item li {
+	text-align: center;
+	color: #000000;
+	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+	font-size: 35;
+}
+
+ul.item {
+	list-style-type: none;
+}
+
+ul.item li:hover {
+	color:whitesmoke;
+	font-size: 40;
+	text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
+}
