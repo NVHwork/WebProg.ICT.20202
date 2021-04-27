@@ -1,10 +1,10 @@
-span {
+
+b#header {
 	font-family: "Cushing Book";
-	font-size: 300pt;
-	float: left;
-    /* position: absolute; */
+    font-size: 75pt;
+    position: absolute;
     /* margin-bottom: 15px; */
-    /* top: 329px; */
+    top: 329px;
 }
 
 p {
@@ -30,4 +30,3 @@ p.foot {
 	margin-left: 60%;
 	line-height: 300%;
 }
-
