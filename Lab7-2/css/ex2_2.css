@@ -1,0 +1,91 @@
+body{
+	 font-family: Arial, Helvetica, sans-serif;
+	 font-weight: 450;
+}
+.header, .footer{
+	height: 50px;
+	padding: 20px 20px 20px 50px;
+	background-color: #878787;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid white;
+}
+
+.header p{
+
+	font-size: 2em;
+	font-weight: bold;
+	color: white;
+}
+nav{
+	height: 50px;
+	background: black
+
+}
+
+.navigation{
+	height: 100%;
+	margin: 0;
+	list-style-type: none;
+	
+}
+.navigation li{
+	height: 100%;
+	float: left;
+	box-sizing: border-box;
+}
+
+/* .navigation li:hover{
+	
+} */
+
+.navigation li a:hover{
+	color: black;
+	background-color: white;
+}
+.navigation li a{
+	height: 100%;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 12px 15px;
+	display: block;
+	box-sizing: border-box;
+}
+
+.main{
+	padding: 20px 20px 20px 50px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+.main .left{
+	width: 60%;
+	float: left;
+	padding-right: 30px;
+	box-sizing: border-box;
+}
+
+.main .right{
+	width: 40%;
+	float: right;
+	box-sizing: border-box;
+}
+.main .title{
+	border-bottom: 2px solid #999999
+}
+.main .title p{
+	font-size: 2em;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.headings .heading-list{
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.headings{
+	border-bottom:  2px solid #999999
+}
+

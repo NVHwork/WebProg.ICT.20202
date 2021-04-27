@@ -159,7 +159,6 @@ if (isset($_POST["submitted"], $_POST["sort_type"])) {
 
                 </div>
 
-
                 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
                     <p>
                         Values <?= $submitted ? "sorted by $sort_type" : "unsorted"; ?>:
@@ -177,16 +176,7 @@ if (isset($_POST["submitted"], $_POST["sort_type"])) {
 
             </div>
         </form>
-
-
     </div>
-
-
-
-
-
-
-
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Bootstrap JavaScript -->
