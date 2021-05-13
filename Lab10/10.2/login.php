@@ -1,5 +1,4 @@
 <?php
-
 $linkTo = '';
 $userName = '';
 $password = '';
