@@ -9,10 +9,10 @@ if (isset($_POST["UserName"], $_REQUEST["LinkTo"], $_POST["Password"])) {
     $password = $_POST["Password"];
 }
 if (isset($userName)) {
-    $host = 'localhost:3307';
+    $host = 'localhost:3306';
     $user = 'root';
     $passwd = '';
-    $database = 'lab_12';
+    $database = 'lab10';
     $table_name = 'users';
     $query = "SELECT * FROM $table_name WHERE user_name = '$userName' AND password = '$password'";
     $connect = mysqli_connect($host, $user, $passwd, $database);
