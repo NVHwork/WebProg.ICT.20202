@@ -1,0 +1,1 @@
+Execute peter.sql on your phpmyadmin first, and then run familyGuy.html. Good luck
