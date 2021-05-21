@@ -1,0 +1,42 @@
+<!DOCTYPE html <html xmlns="http://www.w3.org/1999/xhtml">
+
+<html>
+
+<head>
+    <script>
+        function onShow(str) {
+            if (str == "") {
+                document.getElementById("txtHint").innerHTML = "";
+                return;
+            } else {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("txtHint").innerHTML = this.responseText;
+                    }
+                };
+                xmlhttp.open("GET", "getFamilyGuy.php?q=" + str, true);
+                xmlhttp.send();
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <form>
+        <select style="border-radius:10px;height: 25px; width:200px; border: 2px solid lightseagreen" name="users"
+            onchange="onShow(this.value)">
+            <option value="">Select a person:</option>
+            <option value="1">Peter Griffin</option>
+            <option value="2">Lois Griffin</option>
+            <option value="3">Joseph Swanson</option>
+            <option value="4">Glenn Quagmire</option>
+        </select>
+    </form>
+    <br>
+    <div id="txtHint"><b style="color: lightseagreen">A Family Guy's member info will be shown here here...</b></div>
+
+</body>
+
+</html>
