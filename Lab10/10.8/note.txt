@@ -1,0 +1,2 @@
+- create database `my_product`
+- run `my_product.sql` file
