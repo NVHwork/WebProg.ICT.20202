@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search Suggestion With Name</title>
+</head>
+
+<body>
+    <h2>Product Search Suggestion With Name</h2>
+    <form action="" autocomplete="off">
+        <div>
+            <input type="text" name="product" placeholder="Enter product name" onkeyup="displaySuggestions(this.value)">
+            <br />
+            <div id="searched-items">
+            </div>
+        </div>
+    </form>
+    <script>
+        function displaySuggestions(str) {
+            // trim space
+            str = str.trim();
+
+            // locate element
+            var x = document.getElementById("searched-items");
+
+            x.classList.remove("display-hidden");
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("searched-items").innerHTML = this.responseText;
+                    x.classList.add("display-hidden");
+                }
+            };
+            xmlhttp.open("GET", "product_server.php?q=" + str, true);
+            xmlhttp.send();
+        }
+    </script>
+</body>
+
+</html>
