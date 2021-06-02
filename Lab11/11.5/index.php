@@ -33,7 +33,6 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
 <head>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/style.css" />
 
 	<title>Products</title>
@@ -51,12 +50,12 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
 				echo "<h2>$message</h2>";
 			}
 			?>
-			<table>
-				<tr>
-					<th>Name</th>
-					<th>Description</th>
-					<th>Price</th>
-					<th>Action</th>
+			<table align="center" cellspacing="0" class="fixed">
+        		<tr style="border-bottom: 1px solid black;" class="head">
+					<th id="cell">Name</th>
+					<th id="cell">Description</th>
+					<th id="cell">Price</th>
+					<th id="cell">Action</th>
 				</tr>
 
 				<?php
@@ -68,10 +67,10 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
 
 				?>
 					<tr>
-						<td><?php echo $row['name'] ?></td>
-						<td><?php echo $row['description'] ?></td>
-						<td><?php echo $row['price'] ?>$</td>
-						<td><a href="index.php?action=add&id=<?php echo $row['id'] ?>">Add to cart</a></td>
+						<td id="cell"><?php echo $row['name'] ?></td>
+						<td ><?php echo $row['description'] ?></td>
+						<td id="cell"><?php echo $row['price'] ?>$</td>
+						<td id="cell"><a href="index.php?action=add&id=<?php echo $row['id'] ?>">Add to cart</a></td>
 					</tr>
 				<?php
 
@@ -83,9 +82,9 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
 		</div>
 		<!--end of main-->
 		<div id="sidebar">
-			<h1>Cart</h1>
+			<div style="margin: 25px auto"></div>
 			<hr />
-			<a href="cart.php">Go to cart</a>
+			<div align="center" id="linkto"><a href="cart.php" >Go to cart</a></div>
 		</div>
 		<!--end of sidebar-->
 	</div>

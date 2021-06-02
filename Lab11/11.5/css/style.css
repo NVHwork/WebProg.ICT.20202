@@ -1,0 +1,66 @@
+
+table, th, td, tr {
+	border: 1px solid #bae1ff;
+	border-collapse: collapse;
+}
+table.fixed {table-layout:fixed; width:500;}/*Setting the table width is important!*/
+table.fixed td {overflow:hidden;}/*Hide text outside the cell.*/
+table.fixed td:nth-of-type(1) {width:100px;text-align: center;}/*Setting the width of column 1.*/
+table.fixed td:nth-of-type(2) {width:200px;}/*Setting the width of column 2.*/
+table.fixed td:nth-of-type(3) {width:100px;text-align: center;}/*Setting the width of column 3.*/
+table.fixed td:nth-of-type(4) {width:100px; text-align: center;}/*Setting the width of column 3.*/0
+tr {
+	margin: 25px auto;
+}
+th {
+	background-color: #bae1ff;
+}
+#cell{
+	max-width:100%;
+	white-space:nowrap;
+}
+
+button {
+	background-color:#bae1ff; /* Green */
+	border: none;
+	color: black;
+	padding: 10px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+button:hover {
+	background-color: #ed7969; /* Green */
+	color: white;
+  }
+
+div#container {
+	max-width: 500px;
+  	margin: auto;
+}
+
+div#total-price {
+	margin: 25px auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+input#quantity {
+	size: 3px;
+	align-self: center;
+	align-content: stretch;
+
+}
+
+div#linkto{
+	margin: 25px auto;
+	font-size:larger;
+}
+div#linkto:hover {
+	font-size: 30px;
+	font-weight: bolder;
+	color: black;
+	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
