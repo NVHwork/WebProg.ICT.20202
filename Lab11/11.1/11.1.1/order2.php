@@ -13,10 +13,10 @@
 		print "Hidden value=$sample_hidden </p><br>";
 		print "You selected product=$product and quantity=$quantity";
 		print "<br><br><input type=\"hidden\" name=\"product\" value=\"$product\"> ";
-		print "<input type=\"hidden\" name=\"quantity\“ value=\"$quantity\">";
+		print "<input type=\"hidden\" name=\"quantity\" value=\"$quantity\">";
 		print "<input type=\"hidden\" name=\"sample_hidden\"value=\"$sample_hidden\">";
 		print 'Please enter your name:';
-		print '<input type="text" size="15" maxlength="20“ name="username">';
+		print '<input type="text" size="15" maxlength="20" name="username">';
 		print ' and billing code: (5 digits)';
 		print '<input type="text" size="5" maxlength="5" name="code">';
 		print '<br> <input type="submit" value="Process Order">';
